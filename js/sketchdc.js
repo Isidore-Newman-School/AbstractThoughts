@@ -3,7 +3,7 @@ var canvas;
 function setup() {
   canvas = createCanvas(600, 600);
   canvas.parent("canvasDiv");
-
+  colorMode(HSB);
 }
 
 function draw() {
