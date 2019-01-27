@@ -5,6 +5,7 @@ var lastChecked = 0;
 var canvas;
 function setup() {
   canvas = createCanvas(600, 600);
+  canvas.parent("canvasDiv");
   background(random(255),random(255),random(255));
 
 

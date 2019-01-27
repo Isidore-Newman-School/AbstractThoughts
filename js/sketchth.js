@@ -1,7 +1,10 @@
-
+var canvas;
 function setup() {
-  createCanvas(600, 600);
+  canvas = createCanvas(600, 600);
+  canvas.parent("canvasDiv");
 
+  background(244, 66, 119);
+  colorMode(HSB);
 }
 
 function draw() {
@@ -9,8 +12,6 @@ function draw() {
 }
 
 function thomasHamp() {
-
-  colorMode(HSB);
 
   var weight=dist(mouseX,mouseY,pmouseX,pmouseY);
   strokeWeight(weight);
